@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>IHM</title>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="css/main.css" type="text/css" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+	<style>
+	body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+</style>
+
+<body class="w3-black">
+
+	<!-- Icon Bar (Sidebar - hidden on small screens) -->
+	<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+		<!-- Avatar image in top left corner -->
+		<img src="images/logo.jpg" style="width:100%">
+		<a href="index.html" class="w3-bar-item w3-button w3-padding-large">
+			<i class="fa fa-home w3-xxlarge"></i>
+			<p>ACCUEIL</p>
+		</a>
+		<a href="creerDevis.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black" id="devis">
+			<i class="fa fa-envelope w3-xxlarge"></i>
+			<p>DEVIS</p>
+		</a>
+		<a href="Profil.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+			<i class="fa fa-user w3-xxlarge"></i>
+			<p>CLIENT</p>
+		</a>
+		<a href="Planning.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+			<i class="fa fa-file-text-o" style="font-size:36px"></i>
+			<p>PLANNING</p>
+		</a>
+	</nav>
+
+	<div class="w3-card-4">
+		<div class="w3-container w3-grey">
+			<h2>Etape 3/4</h2>
+		</div>
+		<form class="w3-container w3-white" action="./etape4.html">
+			<p>      
+				<label class="w3-text-grey"><b>Manutention logement d'arrivée</b></label>
+				<hr>
+			</p>
+
+			<p>
+				<div class="w3-row-padding">
+					<div class="w3-third">
+						<label class="w3-text-grey"><b>Volume</b></label> 
+						<input class="w3-input w3-border" type="text" >
+					</div>
+					<div class="w3-third">
+						<label class="w3-text-grey"><b>nombre d'etage</b></label> 
+						<input class="w3-input w3-border" type="text" >
+					</div>
+					<div class="w3-third">
+						<label class="w3-text-grey"><b>Distance camion - logement </b></label> 
+						<input class="w3-input w3-border" type="number" >
+					</div>
+				</div> 
+			</p>
+			<p>
+				<div class="w3-row-padding">
+					<div class="w3-third">
+						<input class="w3-check" type="checkbox" checked="checked">
+						<label>Monte meuble</label>
+					</div>
+					<div class="w3-third">
+						
+						<input class="w3-check" type="checkbox">
+						<label>Présence ascenceur</label>
+					</div>
+					<div class="w3-third">
+						<label class="w3-text-grey"><b>Total Manutention (euros)</b></label> 
+						<input class="w3-input w3-border" type="text" value ="800 " >
+					</div>
+				</div> 
+			</p>
+			<p>      
+				<label class="w3-text-grey"><b>Groupage</b></label>
+				<hr>
+			</p>
+
+			<p>
+				<div class="w3-row-padding">
+					<div class="w3-third">
+						<input class="w3-check" type="checkbox" checked="checked">
+						<label>Devis tardif</label>
+					</div>
+					<div class="w3-third">
+						<label class="w3-text-grey"><b>Prix de reduction</b></label> 
+						<input class="w3-input w3-border" type="text"  " >
+					</div>
+					<div class="w3-third">
+						<label class="w3-text-grey"><b>Description reduction</b></label> 
+						<input class="w3-input w3-border" type="text"  >
+					</div>
+				</div> 
+			</p>
+			<a class="retour" href="./etape2.html"><img src="images/retour.jpg" alt="retour" style="width: 40px;" /></a>
+			<button class="w3-btn w3-green">Finaliser Devis</button></p>
+		</div>
+	</form>
+</div>
+</body>
+<footer>
+  <p>Copyright 2018© Steven RENAULT et Théo SZATKOWSKI</p>
+</footer>
+</html>

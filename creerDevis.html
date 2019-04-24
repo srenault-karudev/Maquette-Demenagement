@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>IHM</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="css/main.css" type="text/css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body class="w3-black">
+
+  <style>
+  body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+@media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+
+</style>
+
+
+	<!-- Icon Bar (Sidebar - hidden on small screens) -->
+	<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+		<!-- Avatar image in top left corner -->
+		<img src="images/logo.jpg" alt="logo" style="width:100%">
+		<a href="index.html" class="w3-bar-item w3-button w3-padding-large">
+			<i class="fa fa-home w3-xxlarge"></i>
+			<p>ACCUEIL</p>
+		</a>
+		<a href="creerDevis.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black" id="devis">
+			<i class="fa fa-envelope w3-xxlarge"></i>
+			<p>DEVIS</p>
+		</a>
+		<a href="Profil.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+			<i class="fa fa-user w3-xxlarge"></i>
+			<p>CLIENT</p>
+		</a>
+		<a href="Planning.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+			<i class="fa fa-file-text-o" style="font-size:36px"></i>
+			<p>PLANNING</p>
+		</a>
+	</nav>
+
+
+
+  <div class="w3-card-4">
+    <div class="w3-container w3-grey">
+      <h2>Etape 1/4</h2>
+    </div>
+    <form class="w3-container w3-white" action="./etape2.html" autocomplete="on">
+      <p>
+        <div class="w3-row-padding">
+          <div class="w3-third">
+            <label class="w3-text-grey"><b>Nom</b></label> 
+            <select class="w3-select" name="name">
+              <option value="" disabled selected></option>
+              <option value="1">Theo</option>
+              <option value="2">Denis</option>
+              <option value="3">Alex</option>
+            </select> 
+          </div>
+          <div class="w3-third">
+           <label class="w3-text-grey"><b>date de la visite</b></label> 
+           <input class="w3-input w3-border" type="date" disabled="disabled">
+         </div>
+         <label class="w3-text-grey"><b>Temps de Transport</b></label> 
+         <div class="w3-third">
+          <input class="w3-input w3-border" type="number" min="0" placeholder="50min">
+        </div>
+      </div>
+    </p>
+    <p>
+     <div class="w3-row-padding">
+      <div class="w3-third">
+        <label class="w3-text-grey"><b>Coût du chauffeur</b></label> 
+        <input class="w3-input w3-border" type="number" placeholder="25€/h">
+      </div>
+      <div class="w3-third">
+       <label class="w3-text-grey"><b>Prix total</b></label> 
+       <input class="w3-input w3-border" type="number" disabled="disabled" >
+     </div>
+     <div class="w3-third">
+      <label class="w3-text-grey"><b>Distance de transport</b></label> 
+      <input class="w3-input w3-border" type="number" min="0"  placeholder="45km">
+    </div>
+  </div> 
+</p>
+<p>
+  <div class="w3-row-padding">
+    <div class="w3-third">
+      <label class="w3-text-grey"><b>Coût du carburant</b></label> 
+      <input class="w3-input w3-border" type="number" placeholder="10,2€/100km">
+    </div>
+    <div class="w3-third">
+     <label class="w3-text-grey"><b>Prix total</b></label> 
+     <input class="w3-input w3-border" type="number" disabled="disabled">
+   </div>
+   <div class="w3-third">
+    <label class="w3-text-grey"><b>Prix du péage</b></label> 
+    <input class="w3-input w3-border" type="number" placeholder="7€">
+  </div>
+</p>
+ <div class="w3-row-padding">
+  <div class="w3-half">
+   <label class="w3-text-grey"><b>Ammortissement du véhicule</b></label> 
+    <input class="w3-input w3-border" type="number" placeholder="15€">
+  </div>
+  <div class="w3-half">
+       <label class="w3-text-grey"><b>Choix du véhicule</b></label> 
+    <input class="w3-input w3-border" type="number" min="20" max="40" placeholder="20m³">
+  </div>
+</div> 
+</div>
+
+  
+  
+</p>
+</p><button class="w3-btn w3-green">Etape suivante</button></p>
+</form>
+</div>
+<footer>
+  <p>Copyright 2018© Steven RENAULT et Théo SZATKOWSKI</p>
+</footer>
+</body>
+
+</html>

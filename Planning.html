@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>IHM</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="css/main.css" type="text/css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+  body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+</style>
+
+<body class="w3-black">
+
+  <!-- Icon Bar (Sidebar - hidden on small screens) -->
+  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+    <!-- Avatar image in top left corner -->
+    <img src="images/logo.jpg" style="width:100%">
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">
+      <i class="fa fa-home w3-xxlarge"></i>
+      <p>ACCUEIL</p>
+    </a>
+    <a href="creerDevis.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-envelope w3-xxlarge"></i>
+      <p>DEVIS</p>
+    </a>
+    <a href="Profil.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-user w3-xxlarge"></i>
+      <p>CLIENT</p>
+    </a>
+    <a href="Planning.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black" id="planning">
+      <i class="fa fa-file-text-o" style="font-size:36px"></i>
+      <p>PLANNING</p>
+    </a>
+  </nav>
+
+
+
+  <div class="w3-card-4">
+    <div class="w3-container w3-grey">
+      <h2><img src="images/logoPlanning.png" alt="Logo" class="Logo"></h2>
+    </div>
+    <div class="w3-container w3-white">
+      <div  class="w3-row-padding w3-third">
+         <p class="w3-text-grey"><b>Filtrer par date :</b></p>
+         <input class="w3-input w3-border" type="date">
+         <br>
+      </div>
+    </div>
+      <div class="w3-container w3-grey">
+      <div  class="w3-row-padding w3-third">
+        <br>
+
+        <table style="width: 300%;" class="Planning">
+          <tr>
+           <td>Nom du camion</td>
+           <td>Heure et lieu de départ</td>
+            <td>Heure et lieu d'arrivée</td>
+         </tr>
+
+         <tr>
+           <td>Camion 1</td>
+           <td>8:30 -> 12:00 <br>
+            Melun->Fontainebleau</td>
+            <td>13:00->18:00<br>
+              Melun->Fontainebleau</td>
+         </tr>
+         <tr>
+          <td>Camion 2</td>
+          <td>9:10 -> 12:00 <br>
+            Moissy-Cramayel->Guignes</td>
+            <td>13:00->17:30<br>
+              Provins->Sens</td>
+         </tr>
+         </table>
+
+
+         <br>
+      </div>
+               
+         </div>
+
+
+</div>
+</body>
+<footer>
+  <p>Copyright 2018© Steven RENAULT et Théo SZATKOWSKI</p>
+</footer>
+</html>

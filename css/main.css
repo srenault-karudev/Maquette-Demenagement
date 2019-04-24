@@ -1,0 +1,103 @@
+
+footer{
+bottom: 0;
+  background-color: #222222;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+}
+nav{
+  top:0;
+}
+#devis{
+ color:brown;
+}
+#accueil{
+ color:brown;
+}
+#client{
+ color:brown;
+}
+#planning{
+ color:brown;
+}
+body{
+
+text-align:justify;
+background-image:url(../images/Demenagement-famille-pas-cher.png);
+}
+
+.w3-card-4{
+	width: 50%;
+	margin-left: 30%;
+	margin-top: 10%;
+}
+.etape1{
+	margin-left: 30%;
+	color : blue;
+}
+
+
+nav>strong{
+	margin-top: -25px;
+  margin: 10%;
+}
+
+.p-accueil{
+  color:black;
+  background-color: white;
+  padding:1%;
+	width: 45%;
+	margin-left: 30%;
+	margin-top: 10%;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px 5px #5d4747
+}
+
+.current{
+  color:blue;
+  border-bottom-style:solid;
+  border-bottom-color:black;
+  border-top-style:solid;
+  border-top-color:black;
+}
+
+.Logo{
+  margin-left: 45%;
+  max-width: 9%;
+}
+.Planning{ 
+  text-align: center;
+  border-collapse: collapse;
+  background-color: white;
+}
+.Planning td{
+  border: thin solid;
+}
+
+.Client{ 
+  text-align: center;
+  border-collapse: collapse;
+  background-color: white;
+}
+.Client td{
+  border: thin solid;
+}
+.w3-btn{
+  float: right;
+  margin-bottom: 10px;
+}
+.retour{
+    float: left;
+    margin-bottom: 10px;
+}
+/*
+.alert{
+  background-color:#e6f6d5;
+-moz-border-radius:7px;
+-webkit-border-radius:7px;
+border-radius:7px;
+}
+
+*/
+

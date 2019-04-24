@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>IHM</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="css/main.css" type="text/css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+
+<body class="w3-black">
+
+
+
+<style>
+  body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+</style>
+
+
+  <!-- Icon Bar (Sidebar - hidden on small screens) -->
+  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+    <!-- Avatar image in top left corner -->
+    <img src="images/logo.jpg" alt="logo" style="width:100%" >
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">
+      <i class="fa fa-home w3-xxlarge"></i>
+      <p>ACCUEIL</p>
+    </a>
+    <a href="creerDevis.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-envelope w3-xxlarge"></i>
+      <p>DEVIS</p>
+    </a>
+    <a href="Profil.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black" id="client">
+      <i class="fa fa-user w3-xxlarge"></i>
+      <p>CLIENT</p>
+    </a>
+    <a href="Planning.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-file-text-o" style="font-size:36px"></i>
+      <p>PLANNING</p>
+    </a>
+  </nav>
+
+
+
+  <div class="w3-card-4">
+    <div class="w3-container w3-grey">
+      <h2><img src="images/LogoClient.png" alt="Logo" class="Logo" style="max-width: 80px" ></h2>
+    </div>
+    <form class="w3-container w3-white" action="#">
+      <p><br>
+        <div class="w3-row-padding w3-display-container">
+          <button class="w3-btn w3-border w3-border-black w3-round-large w3-display-middle" style="margin-top: -30px;" >Créer Profil</button>
+      </div>
+
+</form>
+  <div class="w3-container w3-white">
+    <table style="width: 100%;" class="Client">
+              <tr>
+               <td>Nom</td>
+               <td>Logement de départ</td>
+               <td>Logement d'arrivée</td>
+               <td>Dernière modification</td>
+               <td><a href='#'> <img src="./images/fleche.jpg" alt="fleche" style="max-width: 30px"></a></td>
+             </tr>
+             <tr>
+               <td>Denis</td>
+               <td>Melun</td>
+               <td>Sens</td>
+               <td>08/10/2018</td>
+               <td><a href='#'> <img src="./images/fleche.jpg" alt="fleche" style="max-width: 30px"></a></td>
+             </tr>
+
+             <tr>
+              <td>Théo</td>
+              <td>Avon</td>
+              <td>Provins</td>
+              <td>07/10/2018</td>
+              <td><a href='#'> <img src="./images/fleche.jpg" alt="fleche" style="max-width: 30px"></a></td>
+             </tr>
+
+             <tr>
+              <td>Alex</td>
+              <td>Guignes</td>
+              <td>Moissy Cramayel</td>
+              <td>05/10/2018</td>
+              <td><a href='#'> <img src="./images/fleche.jpg" alt="fleche" style="max-width: 30px"></a></td>
+             </tr>
+   </table>
+   <br>
+  </div>
+
+
+<!--<form class="w3-container w3-white" action="./VoirProfil.html">
+      <p>
+        <div class="w3-row-padding w3-display-container">
+          <button class="w3-btn w3-border w3-border-black w3-round-large w3-display-middle" class="ButPro">Voir Profil</button>
+      </div>
+    </p>
+<br> <br>
+</form>
+-->
+</div>
+<footer>
+  <p>Copyright 2018© Steven RENAULT et Théo SZATKOWSKI</p>
+</footer>
+</body>
+
+</html>
